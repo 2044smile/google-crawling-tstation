@@ -1,4 +1,6 @@
+beautifulsoup4==4.11.1
 Pillow==9.2.0
 six==1.16.0
+soupsieve==2.3.2.post1
 typing-extensions==3.10.0.0
 wcwidth==0.2.5
