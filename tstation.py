@@ -20,14 +20,14 @@ class tstation:
         answers = bs[0].findAll('h3', class_='ipQwMb ekueJc RD0gLb')
 
         for answer in answers:
-            slack = {
+            data = {
                 "attachments": [{
                     "color": "#36a64f",
                     "title": answer.text,
                     "title_link": f"https://www.news.google.com/{answer.find('a').get('href')}"
                     }]
                 }
-            requests.post(url=self.slack_url, headers=self.headers, data=json.dumps(slack))
+            requests.post(url=self.slack_url, headers=self.headers, data=json.dumps(data))
 
 
 t = tstation()
